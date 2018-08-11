@@ -1,6 +1,6 @@
 {
   "name": "prolly-put",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A put method for Array, Map, Set, WeakMap, and WeakSet.",
   "main": "index.js",
   "unpkg": "min.js",
