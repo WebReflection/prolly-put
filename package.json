@@ -1,0 +1,30 @@
+{
+  "name": "prolly-put",
+  "version": "0.0.0",
+  "description": "A put method for Array, Map, Set, WeakMap, and WeakSet.",
+  "main": "index.js",
+  "unpkg": "min.js",
+  "scripts": {
+    "build": "npm run min && npm test && npm run size",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "min": "uglifyjs index.js --support-ie8 --comments=/^!/ -c -m -o min.js",
+    "size": "cat index.js | wc -c;cat min.js | wc -c;gzip -c9 min.js | wc -c;cat min.js | brotli | wc -c && rm -f min.js.br",
+    "test": "istanbul cover test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebReflection/prolly-put.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WebReflection/prolly-put/issues"
+  },
+  "homepage": "https://github.com/WebReflection/prolly-put#readme",
+  "devDependencies": {
+    "coveralls": "^3.0.2",
+    "istanbul": "^0.4.5",
+    "uglify-js": "^3.4.7"
+  }
+}
