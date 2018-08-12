@@ -15,7 +15,16 @@
     "type": "git",
     "url": "git+https://github.com/WebReflection/prolly-put.git"
   },
-  "keywords": [],
+  "keywords": [
+    "put",
+    "set",
+    "weakmap",
+    "weakset",
+    "map",
+    "set",
+    "collections",
+    "array"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
